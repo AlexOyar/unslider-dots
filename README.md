@@ -107,11 +107,13 @@ First, in your directory create your index.html and add the following code:
 </html>
 ```
 
-The trick here is that in order to work, you must add a few parameter to `unslider` class, like `overflow: hidden; position: relative;`
+**The trick here is that in order to work, you must add a few parameter to `unslider` class, like `overflow: hidden; position: relative;`**
 
-I already added the CSS dependencies in the Head and the Scripts (jquery and unslider) an the bottom of the Body. JQUERY MUST BE FIRST THAN UNSLIDER OTHERWISE IT WONT WORK.
+That means that we will make some changes to the original css files from unslider. I dont know why do we have to do this manually, but simply putting dots:true inside the unslider script wont work.
 
-In order to properly setup the dots index, a few changes must be made to the original css files from unslider. I dont know why do we have to do this, but simply putting dots:true inside the unslider script wont work.
+*I already added the CSS dependencies in the Head and the Scripts (jquery and unslider) an the bottom of the Body. JQUERY MUST BE FIRST THAN UNSLIDER OTHERWISE IT WONT WORK.*
+
+Now, you can see that the background image is not properly scaling, the font is default black, and the link is just a... well... a link. So, in order to make it pretty, just add the style.css.  
 
 Add a new css folder and create the following style.css:
 
