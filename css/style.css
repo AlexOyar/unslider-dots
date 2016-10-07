@@ -2,9 +2,7 @@
 * {
 	margin: 0;
 	padding: 0;
-
 	-webkit-font-smoothing: antialiased;
-
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -119,7 +117,7 @@
 
 .banner .btn:hover
 {
-  background:rgba(255,255,255,.05);
+  background:rgba(255,255,255,.5);
 }
 
 .banner .btn:active
