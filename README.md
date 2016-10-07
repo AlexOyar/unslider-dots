@@ -1,7 +1,6 @@
 # Responsive SlideShow using Unslider Dots
 
-In this tutorial we will be making a full responsive slideshow using dots as indexes with **Unslider**.
-Then, we will add some text on top of the images and set some cool Jquery animations to them. 
+In this tutorial we will be making a full responsive slideshow using dots as indexes with **Unslider** and some titles.
 
 Notice that in this tutorial i will not add a navigation bar, if you want to see how to make a full responsive navigation
 bar, i will upload one later.
@@ -13,7 +12,7 @@ The first thing we will do i to set up our project structure and dependencies, f
 
 **WHY?**
 
-Well, It is posible to add your dependencies by yourself without these tools, and that's fine. But if you are serious about web development, you will notice that it is incredibly easy to add any package/module/library you want using Bower. And we need Node.JS NPM in order to install it. More information about bower [here] (https://bower.io/) and Node.JS [here] (https://nodejs.org/en/)
+*Well, It is posible to add your dependencies by yourself without these tools, and that's fine. But if you are serious about web development, you will notice that it is incredibly easy to add any package/module/library you want using Bower. And we need Node.JS NPM in order to install it. More information about bower [here] (https://bower.io/) and Node.JS [here] (https://nodejs.org/en/)*
 
 - First, install Node.JS by downloading the installer in their web page, after following instructions make sure is properly set up by opening you command shell (CMD in windows) and typing `npm -v`, you should be able to see your current npm version.
 
@@ -107,6 +106,8 @@ First, in your directory create your index.html and add the following code:
   </body>
 </html>
 ```
+
+The trick here is that in order to work, you must add a few parameter to `unslider` class, like `overflow: hidden; position: relative;`
 
 I already added the CSS dependencies in the Head and the Scripts (jquery and unslider) an the bottom of the Body. JQUERY MUST BE FIRST THAN UNSLIDER OTHERWISE IT WONT WORK.
 
