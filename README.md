@@ -271,4 +271,4 @@ Add a new css folder and create the following style.css:
 
 
 ```
-
+That's it! 
