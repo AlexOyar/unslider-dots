@@ -95,7 +95,7 @@ First, in your directory create your index.html and add the following code:
         dots: true,
         nav:true,
         fluid: true,
-        infinite: true
+        infinite: true 		//Repeats the slideshow after last slide
       });
       //  Listen to changes
       slider.on('unslider.change', function(event, index, slide) {
