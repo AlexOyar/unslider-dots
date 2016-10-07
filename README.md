@@ -119,9 +119,8 @@ Add a new css folder and create the following style.css:
 
 ```css
 
+
 * {
-	margin: 0;
-	padding: 0;
 	-webkit-font-smoothing: antialiased;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -136,8 +135,8 @@ Add a new css folder and create the following style.css:
   font-size:18px;
   line-height:24px;
   color:rgba(255,255,255,.6);
-  text-shadow:0 0 1px rgba(0,0,0,.05), 0 1px 2px rgba(0,0,0,.3);
-  box-shadow:0 1px 2px rgba(0,0,0,.25);
+  text-shadow:0 0 1px rgba(0,0,0,.2), 0 1px 2px rgba(0,0,0,.5);
+  box-shadow:0 1px 2px rgba(0,0,0,.5);
 }
 
 .banner ul
@@ -210,7 +209,7 @@ Add a new css folder and create the following style.css:
 .banner h1,.banner h2
 {
   font-size:4em;
-  line-height:52px;
+  line-height:22px;
   color:#fff;
 }
 
@@ -218,12 +217,12 @@ Add a new css folder and create the following style.css:
 {
 	font-size:1.3em;
   color:#fff;
+	margin: 0px 0px 10px 0px;
 }
 
 .banner .btn
 {
   display:inline-block;
-  clear:both;
   color:#fff;
   font-size:1em;
   font-weight:700;
@@ -240,24 +239,6 @@ Add a new css folder and create the following style.css:
   background:rgba(255,255,255,.5);
 }
 
-.banner .btn:active
-{
-  -webkit-filter:drop-shadow(0-1px2pxrgba(0,0,0,.5));
-  -moz-filter:drop-shadow(0-1px2pxrgba(0,0,0,.5));
-  -ms-filter:drop-shadow(0-1px2pxrgba(0,0,0,.5));
-  -o-filter:drop-shadow(0-1px2pxrgba(0,0,0,.5));
-  filter:drop-shadow(0-1px2pxrgba(0,0,0,.5));
-}
-
-.banner .btn,.banner .dot
-{
-  -webkit-filter:drop-shadow(01px2pxrgba(0,0,0,.3));
-  -moz-filter:drop-shadow(01px2pxrgba(0,0,0,.3));
-  -ms-filter:drop-shadow(01px2pxrgba(0,0,0,.3));
-  -o-filter:drop-shadow(01px2pxrgba(0,0,0,.3));
-  filter:drop-shadow(01px2pxrgba(0,0,0,.3));
-}
-
 .banner .dots
 {
   position:absolute;
@@ -272,13 +253,13 @@ Add a new css folder and create the following style.css:
   width:10px;
   height:10px;
   text-indent:-999em;
-  border:2px solid #fff;
+  border:4px solid #fff;
   border-radius:6px;
   cursor:pointer;
   opacity:.4;
-  -webkit-transition:background .5s, opacity .5s;
-  -moz-transition:background .5s, opacity .5s;
-  transition:background .5s, opacity .5s;
+  -webkit-transition:background 1s, opacity .5s;
+  -moz-transition:background 1s, opacity .5s;
+  transition:background 1s, opacity .5s;
   margin:0 4px;
 }
 
@@ -287,6 +268,7 @@ Add a new css folder and create the following style.css:
   background:#fff;
   opacity:1;
 }
+
 
 ```
 
