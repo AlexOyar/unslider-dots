@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Unslider Dots</title>
+    <!--CSS Dependencies-->
+    <link rel="stylesheet" href="bower_components/unslider/dist/css/unslider-dots.css" media="screen" title="no title">
+    <link rel="stylesheet" href="bower_components/unslider/dist/css/unslider.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
+    <style media="screen">
+    .unslider {
+        /* new */
+        overflow: hidden;
+        position: relative;
+    }
+    .unslider-nav{
+            position: absolute;
+            width: 100%;
+            bottom: 2%;
+      }
+      body{
+        background-color: rgb(43, 43, 43)
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="banner">
+        <ul>
+          <li style="background-image: url('http://placehold.it/1280x750');">
+            <div class="slideanim">
+              <h1>A great title for this slideshow.</h1>
+              <br>
+              <p>Lorem ipsum dolor sit amet, quo lorem ignota id, homero consectetuer pro te.</p>
+              <p>Cum eu dolores periculis. Prompta repudiandae te eum, id sea aliquip scriptorem.</p>
+              <br>
+              <a class="btn" href="#">See more</a>
+            </div>
+          </li>
+          <li style="background-image: url('http://placehold.it/1280x750');">
+            <div class="slideanim">
+              <h1>The perfect title for your second image.</h1>
+              <br>
+              <p>Lorem ipsum dolor sit amet, quo lorem ignota id, homero consectetuer pro te.</p>
+              <p>Cum eu dolores periculis. Prompta repudiandae te eum, id sea aliquip scriptorem.</p>
+              <br>
+              <a class="btn" href="#">Check it out</a>
+            </div>
+          </li>
+          <li style="background-image: url('http://placehold.it/1280x750');">
+            <div class="slideanim">
+              <h1>Another awesome title for the last one.</h1>
+              <br>
+              <p>Lorem ipsum dolor sit amet, quo lorem ignota id, homero consectetuer pro te.</p>
+              <p>Cum eu dolores periculis. Prompta repudiandae te eum, id sea aliquip scriptorem.</p>
+              <br>
+              <a class="btn" href="#">Take me there</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+	  <script src="bower_components/unslider/dist/js/unslider-min.js"></script>
+    <script>
+		jQuery(document).ready(function($) {
+			var slider = $('.banner').unslider({
+        dots: true,
+        nav:true,
+        fluid: true,
+        infinite: true
+      });
+      //  Listen to changes
+      slider.on('unslider.change', function(event, index, slide) {
+        //Here trigger any event when unslider changes
+      });
+
+		});
+	</script>
+  </body>
+</html>
